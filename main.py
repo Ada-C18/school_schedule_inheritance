@@ -1,5 +1,6 @@
 from school_schedule.student import Student
 from school_schedule.high_school_student import HighSchoolStudent
+from school_schedule.freshman_student import Freshman
 
 # first instance
 quinn = Student(
@@ -36,3 +37,6 @@ claire = HighSchoolStudent(
 students = [quinn, claire]
 for student in students:
     print(student.summary())
+
+percy = Freshman("Percy", [])
+print(percy.summary())
